@@ -1,0 +1,33 @@
+//
+// Player.hh for bomberman in /home/jonathan/Documents/Work/cpp_bomberman/Character
+//
+// Made by jonathan
+// Login   <jonathan@epitech.net>
+//
+// Started on  Fri May  9 13:00:30 2014 jonathan
+// Last update Mon May 12 15:06:28 2014 jonathan
+//
+
+#ifndef _PLAYER_H_
+# define _PLAYER_H_
+
+#include "ACharacter.hh"
+
+class Player : public ACharacter
+{
+private:
+  Player(const Player &old);
+  Player &operator=(const Player &old);
+
+public:
+  Player(float posX = 0, float posY = 0, float posZ = 0, float rotX = 0, float rotY = 0, float rotZ = 0, float scX = 0.1, float scY = 0.1, float scZ = 0.1);
+  virtual ~Player();
+
+  virtual bool	initialize();
+  virtual void	update(gdl::Clock const &clock, gdl::Input &input);
+  virtual void	draw(gdl::AShader &shader, gdl::Clock const &clock);
+
+  virtual void	putBomb(void);
+};
+
+#endif /* _PLAYER_H_ */

@@ -1,0 +1,12 @@
+	Touche		|			Action			|
+-------------------------------------------------------------------------
+n			| nouvelle map					|
+l			| charger une map				|
+haut			| bouge le block vers le haut/choisit une map	|
+bas			| bouge le block vers le bas/choisit une map	|
+gauche			| bouge le block vers la gauche			|
+droite			| bouge le block vers la droite			|
+entrer			| selectionne la map				|
+espace			| pose le block / selection la map		|
+r			| pose les blocks de manière aléatoire		|
+-------------------------------------------------------------------------
